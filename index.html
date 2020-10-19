@@ -21,7 +21,24 @@
 
 <style>
 html,body,h1,h2,h3,h4,h5,h6,i {font-family: "Roboto", sans-serif}
-
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+.waves-effect.waves-light .waves-ripple {
+  background-color: rgba(255, 255, 255, 0.45);
+}
 
 </style>
 <body class="w3-light-grey">
@@ -309,7 +326,7 @@ html,body,h1,h2,h3,h4,h5,h6,i {font-family: "Roboto", sans-serif}
                 </p>
               </div>
               
-              <button onclick="document.getElementById('id011').style.display='block'" class="w3-button w3-block w3-purple">View letter</button>
+              <button onclick="document.getElementById('id011').style.display='block'" class="w3-button w3-block w3-purple waves-effect waves-light">View letter</button>
          
               <div id="id011" class="w3-modal">
                 <div class="w3-modal-content">
@@ -346,7 +363,7 @@ html,body,h1,h2,h3,h4,h5,h6,i {font-family: "Roboto", sans-serif}
                 </p>
               </div>
               
-              <button onclick="document.getElementById('id012').style.display='block'" class="w3-button w3-block w3-purple">View letter</button>
+              <button onclick="document.getElementById('id012').style.display='block'" class="w3-button w3-block w3-purple waves-effect waves-light">View letter</button>
          
               <div id="id012" class="w3-modal">
                 <div class="w3-modal-content">
